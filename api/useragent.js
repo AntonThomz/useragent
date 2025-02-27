@@ -87,7 +87,7 @@ function generateRandomUserAgent() {
 module.exports = async (req, res) => {
    try {
       const userAgent = generateRandomUserAgent();
-      return res..end(
+      return res.end(
          JSON.stringify(
             {
                status: 'success',
